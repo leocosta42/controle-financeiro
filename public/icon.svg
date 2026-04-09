@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="none">
+  <rect width="512" height="512" rx="112" fill="url(#grad)" />
+  <!-- A very elegant Piggy / Wallet abstract or Target icon -->
+  <!-- We'll do a simple target since it fits the 'Cofre/Meta' vibe -->
+  <path d="M256 128c-70.69 0-128 57.31-128 128s57.31 128 128 128 128-57.31 128-128-57.31-128-128-128zm0 216c-48.52 0-88-39.48-88-88s39.48-88 88-88 88 39.48 88 88-39.48 88-88 88z" fill="white"/>
+  <circle cx="256" cy="256" r="48" fill="white"/>
+  <defs>
+    <linearGradient id="grad" x1="0" y1="0" x2="512" y2="512" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#10b981" />
+      <stop offset="1" stop-color="#064e3b" />
+    </linearGradient>
+  </defs>
+</svg>

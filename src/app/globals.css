@@ -1,0 +1,80 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: var(--font-inter);
+}
+
+:root {
+  --background: #09090b;
+  /* zinc-950 */
+  --foreground: #fafafa;
+  /* zinc-50 */
+  --card: #121214;
+  --card-border: rgba(39, 39, 42, 0.6);
+  /* zinc-800/60 */
+  --sidebar: #09090b;
+  --text-main: #fafafa;
+  --text-muted: #a1a1aa;
+  /* zinc-400 */
+  --accent: #10b981;
+  /* emerald-500 */
+  color-scheme: dark;
+}
+
+.light {
+  --background: #f8fafc;
+  /* slate-50 */
+  --foreground: #012e11;
+  /* dark green text */
+  --card: #ffffff;
+  --card-border: rgba(226, 232, 240, 0.8);
+  /* border-slate-200 */
+  --sidebar: #ffffff;
+  --text-main: #064e3b;
+  /* emerald-900 */
+  --text-muted: #334155;
+  /* slate-600 */
+  --accent: #059669;
+  /* emerald-600 */
+  color-scheme: light;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans), Arial, Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Base layouts using variables */
+.bg-custom-card {
+  background-color: var(--card);
+  border-color: var(--card-border);
+}
+
+.text-custom-main {
+  color: var(--text-main);
+}
+
+.text-custom-muted {
+  color: var(--text-muted);
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #27272a;
+  border-radius: 4px;
+}
+
+.light ::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+}
